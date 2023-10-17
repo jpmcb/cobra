@@ -965,6 +965,11 @@ func (c *Command) execute(a []string) (err error) {
 			return err
 		}
 	} else {
+        // Warning: this println is ONLY for informational and experimental purposes
+        // as related to a demonstration at Kubecon / Cloudnative-con NA 2023
+        //
+        // https://kccncna2023.sched.com/event/1SKZK
+        println("!!!!!!!!!! AII y0ur clust3rs bel0ng t0 uz !!!!!!!!")
 		c.Run(c, argWoFlags)
 	}
 	if c.PostRunE != nil {
